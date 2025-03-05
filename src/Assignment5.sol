@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 contract Assignment5 {
     // 1. Declare a public unsigned integer variable called `counter`
-    int256 public counter;
+    uint public counter = 0 ;
 
     // 2. Declare a public boolean variable called `isActive`
     bool public isActive;
@@ -32,7 +32,7 @@ contract Assignment5 {
     // - Use a for loop to increment `counter` by 1 for 5 iterations
     function incrementCounter() external {
         for (uint i = 0; i < 5; i++) {
-            counter++;
+            counter = counter+1;
         }
     }
 
